@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources | Path to Parallel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <div class="brand-wrap">
+          <div class="brand">
+            <img src="unnamed.png" alt="Brand logo" />
+          </div>
+          <div class="brand-name">Path to Parallel</div>
+        </div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <div class="nav-item dropdown">
+            <a href="about-us.html">About Us</a>
+            <div class="dropdown-menu">
+              <a href="about-us.html">About Us</a>
+              <a href="meet-the-team.html">Meet the Team</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="active" href="lessons.html">Programs</a>
+            <div class="dropdown-menu">
+              <a href="lessons.html">Lessons</a>
+              <a href="resources.html">Resources</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="get-involved.html">Get Involved</a>
+            <div class="dropdown-menu">
+              <a href="get-involved.html">Sign up</a>
+              <a href="become.html">Become a Tutor</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <a class="donate-btn" href="donate.html">Donate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="resources-page">
+          <h1 class="resources-title">Resources</h1>
+          <p class="resources-intro">Explore our blog for educational resources on engineering and computer science.</p>
+          <div class="resource-grid">
+            <div class="resource-card resource-coming-soon">
+              <img src="Robotics.png" alt="Students working on a robotics project" />
+              <div class="resource-card-content">
+                <span class="resource-category">COMING SOON</span>
+                <h2>More to Come</h2>
+                <p>New educational resources are on the way. Stay Tuned. </p>
+              </div>
+            </div>
+            <button class="resource-card" type="button" data-resource-dialog="engineering-dialog" aria-haspopup="dialog">
+              <img src="Screenshot 2026-10-07 214834.png" alt="Math and science learning resource" />
+              <div class="resource-card-content">
+                <span class="resource-category">BLOG</span><span class="resource-card-meta"> &middot; October 7, 2026 &middot; By Path to Parallel</span>
+                <h2>Introduction to the Intersection of Sciences</h2>
+                <p>Explore how engineering ideas merge with subjects like math and other disciplines like coding.</p>
+              </div>
+            </button>
+          </div>
+          <dialog class="resource-dialog" id="engineering-dialog" aria-labelledby="engineering-dialog-title">
+            <button class="resource-dialog-close" type="button" aria-label="Close article">×</button>
+            <article class="resource-article">
+              <span class="resource-category">ENGINEERING BLOG</span>
+              <h2 id="engineering-dialog-title">Introduction to the Intersection of Sciences</h2>
+              <p class="resource-article-meta"><time datetime="2026-10-07">October 7, 2026</time> &middot; By Path to Parallel</p>
+              <p>Welcome to Path to Parallel! Today, we'll explore how all topics of STEM intersect. Including math,
+                sciences (physics, chemistry, biology, etc.), coding, and engineering and how they all come together and make each other up!
+                <br> <br> Let's first break down STEM. <br> STEM, sometimes also represented as STEAM, stands for Science, Technology,
+                Engineering, (Art,) and Math. The reason why this broad topic is represnted through the acronym of STEM is because all
+                these disciplines are interconnected and support each other in various ways. For example, engineering wouldn't be possible 
+                without math or physics, because it is just the applied form of both topics.<br> <br> This is similar for other topics, even branching
+                into medicine, which is a lot of applied biology. Now that we understand how subjects like math and science can relate to careers like medicine
+                and engineering, let's explore how two larger disciplines like computer science and engineering connect. <br> <br>
+                When you build a robot, you must assemble the parts, which is engineering. But to get it to move, you must program it to do so, giving it
+                instructions, which is how the coding aspect comes to play. Engineering and coding both work together to create a robot. <br> <br> For more information,
+                make sure to keep checking our blog, and stay up to date on program and lesson plans!
+              </p>
+            </article>
+          </dialog>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <img class="footer-logo" src="unnamed.png" alt="Path to Parallel logo" />
+      <div class="footer-identity">
+        <div class="footer-brand">Path to Parallel</div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/company/path-to-parallel" target="_blank" rel="noopener noreferrer" aria-label="Path to Parallel on LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="" /></a>
+          <a href="https://www.instagram.com/pathtoparallel?igsi=MWVkdXh5cGgxdnZqZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Path to Parallel on Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="newsletter-container">
+        <h2>Join Our Newsletter</h2>
+        <p>Get the latest updates, articles, and insights delivered straight to your inbox.</p>
+        <form action="https://script.google.com/macros/s/AKfycbz8ZcInkp3gB8xMnevlLBhfnCM-vd4y0J7yPwML309eWQY3AYZbpsxMnb8vaDcVF9l11Q/exec" method="POST" class="newsletter-form">
+          <input type="hidden" name="_subject" value="New Newsletter Subscriber!">
+          <input type="hidden" name="_template" value="table">
+          <input type="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter-status" role="status" aria-live="polite"></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
